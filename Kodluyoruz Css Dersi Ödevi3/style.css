@@ -1,0 +1,131 @@
+/* Genel Ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Üst Menü: Sağ tarafa hizalama */
+header {
+    height: 60px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end; /* Sağ tarafa alır */
+    align-items: center;
+    padding: 10px 20px;
+    gap: 15px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+}
+
+.top-nav a:hover { text-decoration: underline; }
+
+.app-icon { width: 16px; opacity: 0.6; cursor: pointer; }
+
+/* Ödev Gereksinimi: Profil fotoğrafı ve yarıçap */
+.profile-img {
+    border-radius: 50%; /* Tam yuvarlak yapar */
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+/* Orta Alan Tasarımı */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.logo img { width: 272px; margin-bottom: 30px; }
+
+/* Ödev Gereksinimi: Arama alanı yarıçap ve gölge */
+.search-area {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px; /* Köşe yarıçapı */
+    padding: 5px 15px;
+    transition: box-shadow 0.2s;
+}
+
+.search-area:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28); /* Ödevdeki gölge isteği */
+}
+
+/* Ödev Gereksinimi: Arama input genişliği 480px ve kenarlıksız */
+.search-input {
+    width: 480px;
+    height: 34px;
+    border: none;
+    outline: none; /* Tıklanınca çıkan çizgiyi siler */
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.search-icon { color: #9aa0a6; }
+.voice-icon { width: 24px; cursor: pointer; }
+
+/* Ödev Gereksinimi: Butonların ortalanması ve stili */
+.button-group {
+    margin-top: 25px;
+}
+
+.btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5f6368;
+    font-family: Arial;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #202124;
+}
+
+/* Ödev Gereksinimi: Footer arka plan ve liste temizliği */
+footer {
+    background-color: #f2f2f2;
+    color: #70757a;
+}
+
+.footer-top {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    list-style: none; /* Liste noktalarını kaldırır */
+    display: flex;
+    padding: 0;
+}
+
+.footer-links li { padding: 15px; }
+.footer-links a { text-decoration: none; color: #70757a; font-size: 14px; }
+.footer-links a:hover { text-decoration: underline; }
