@@ -1,0 +1,60 @@
+/* Temel Ayarlar */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Navigasyon Menüsü */
+nav {
+    background-color: #34495e;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* İçerik Alanı */
+main {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* ÖDEVİN ÖZEL İSTEĞİ: Liste noktalarını içeriye alır */
+.list-section ul {
+    list-style-position: inside;
+    padding: 0;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+.list-section li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
